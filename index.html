@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div class="topnav" id="navbar">
+            <div>
+                <a href="#s-home">Home</a>
+                <a href="#s-about">About</a>
+                <a href="#s-contact">Contact</a>
+            </div>
+            <div class="icons">
+                <i class="fa fa-facebook icon"></i>
+                <i class="fa fa-instagram icon"></i>
+                <i class="fa fa-twitter icon"></i>
+            </div>
+        </div>
+
+        <div class="topnav1" id="navbar1">
+            <div class="midnav">
+                <div>
+                    <div id="logo">
+                        <img src="image/map.svg" alt="">
+                    </div>
+                    <div id="display">
+                        <a href="#" id="home">Home <span class="navb"></span></a>
+                        <a href="#s-about" id="about">About <span class="navb"></span></a>
+                        <a href="#s-contact" id="contact">Contact Us<span class="navb"></span></a>
+                    </div>
+                </div>
+
+                <form id="msearch">
+                    <div onclick="cut()"><img src="image/x.svg" alt=""></div>
+                    <input type="search" id="search" name="search" placeholder="Search the site...">
+                </form>
+                <div class="icons1">
+                    <img src="image/search.svg" alt="" class="icon1" onclick="search()">
+                    <img src="image/user.svg" alt="" class="icon1" id="user">
+                </div>
+            </div>
+        </div>
+
+        <div class="side-icon-bar">
+            <i class="fa fa-facebook-official side-inner-icon"></i>
+            <i class="fa fa-codepen side-inner-icon"></i>
+            <i class="fa fa-reddit-alien side-inner-icon"></i>
+            <i class="fa fa-pinterest-p side-inner-icon"></i>
+            <i class="fa fa-twitter side-inner-icon"></i>
+            <i class="fa fa-linkedin side-inner-icon"></i>
+        </div>
+        <section id="mainbody">
+
+        </section>
+
+
+        <div class="footer">
+            <div class="f-block1">
+                <div class="f-icons">
+                    <i class="fa fa-facebook-official"></i>
+                    <i class="fa fa-codepen"></i>
+                    <i class="fa fa-reddit"></i>
+                    <i class="fa fa-pinterest-p"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-linkedin"></i>
+                </div>
+                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                <p><b>©2021 Portfolio</b> </a>
+                </p>
+            </div>
+
+            <div class="f-block2">
+                <h2>Some Links</h2>
+                <div>
+                    <span>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">License</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                            <li><a href="#">Terms of services</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Support Center</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                               </span>
+                    <span>
+                        <ul>
+                            <li><a href="#">Templates</a></li>
+                            <li><a href="#">Create a Blog</a></li>
+                            <li><a href="#">Explore</a></li>
+                            <li><a href="#">Web Hosting</a></li>
+                            <li><a href="#">Domains</a></li>
+                            <li><a href="#">My Sites</a></li>
+                        </ul>
+                                 </span>
+                </div>
+
+            </div>
+            <div class="f-block3">
+                <h2>POPULAR TAGS</h2>
+                <p class="l-tags">
+                    <span class="tags">Coding</span>
+                    <span class="tags">Travel</span>
+                    <span class="tags">Blogs</span>
+                    <span class="tags">Python</span>
+                    <span class="tags">Freelancing</span>
+                    <span class="tags">Frontend</span>
+                    <span class="tags">Web Development</span>
+                    <span class="tags">Portfolio</span>
+                    <span class="tags">Hosting</span>
+                </p>
+            </div>
+        </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

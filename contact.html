@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+
+    <title>Contact form</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="">
+            <div class="row">
+                <h4>Account</h4>
+                <div class="input-group input-group-icon">
+                    <input type="text" placeholder="Full Name">
+                    <div class="input-icon">
+                        <i class="fa fa-user"></i>
+                    </div>
+                </div>
+                <div class="input-group input-group-icon">
+                    <input type="email" placeholder="Email Address">
+                    <div class="input-icon">
+                        <i class="fa fa-envelope"></i>
+                    </div>
+                </div>
+                <div class="input-group input-group-icon">
+                    <input type="password" placeholder="Passowrd">
+                    <div class="input-icon">
+                        <i class="fa fa-key"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-half">
+                    <h4>Date of Birth</h4>
+                    <div class="input-group">
+                        <div class="col-third">
+                            <input type="text" placeholder="DD">
+                        </div>
+                        <div class="col-third">
+                            <input type="text" placeholder="MM">
+                        </div>
+                        <div class="col-third">
+                            <input type="text" placeholder="YYYY">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-half">
+                    <h4>Gender</h4>
+                    <div class="input-group">
+                        <input type="radio" name="gender" value="male" id="gender-male">
+                        <label for="gender-male">Male</label>
+                        <input type="radio" name="gender" value="female" id="gender-female">
+                        <label for="gender-female">Female</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <h4>Payment Details</h4>
+                <div class="input-group">
+                    <input type="radio" id="payment-method-card" name="payment-method" value="card" checked="true">
+                    <label for="payment-method-card">
+                        <span><i class="fa fa-cc-visa"> | Credit Card</i></span>
+                    </label>
+                    <input type="radio" name="payment-method" value="paypal" id="payment-method-paypal">
+                    <label for="payment-method-paypal">
+                        <span><i class="fa fa-cc-paypal"> | Paypal</i></span>
+                    </label>
+                </div>
+            </div>
+            <div class="input-group input-group-icon">
+                <input type="number" placeholder="Card Number">
+                <div class="input-icon">
+                    <i class="fa fa-credit-card"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-half">
+                    <div class="input-group input-group-icon">
+                        <input type="text" placeholder="Card CVC">
+                        <div class="input-icon">
+                            <i class="fa fa-user"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-half">
+                    <div class="input-group">
+                        <select name="" id="">
+                        <option value="">01 Jan</option>
+                        <option value="">02 Jan</option>
+                    </select>
+                        <select name="Card" id="">
+                        <option value="">2015</option>
+                        <option value="">2015</option>
+                    </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <h4>Terms and Conditions</h4>
+                <div class="input-group">
+                    <input type="checkbox" id="terms">
+                    <label for="terms">I accept the terms and conditions for signing up to this service, and hereby confirm I have read the privacy policy.</label>
+                </div>
+                <div class="input-group">
+                    <button>Submit
+                    </button>
+                </div>
+        </form>
+        </div>
+
+</body>
+
+</html>
