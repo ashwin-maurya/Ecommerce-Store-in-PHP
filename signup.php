@@ -34,25 +34,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['username'] = $username;
             $_SESSION['user_id'] = $user;
 
-            $refurl = isset($_POST['refurl']) ? base64_decode($_POST['refurl']) : '';
-            if ($refurl == "http://localhost/web/signup.php?") {
-                header("Location:http://localhost/web/?user=$user");
-                die();
-            } elseif ($refurl == "http://localhost/web/login.php?") {
-                header("Location:http://localhost/web/?user=$user");
-                die();
-            } elseif ($refurl == "http://localhost/web/") {
-                header("Location:http://localhost/web/?user=$user");
-                die();
-            } elseif (!empty($refurl)) {
-                header("Location: $refurl&user=$user");
-                die();
-            } else {
-                header("Location:http://localhost/web/?user=$user");
-                die();
-            }
             if ($result) {
                 $showAlert = true;
+                $refurl = isset($_POST['refurl']) ? base64_decode($_POST['refurl']) : '';
+                if ($refurl == "http://localhost/web/signup.php?") {
+                    header("Location:http://localhost/web/?user=$user");
+                    die();
+                } elseif ($refurl == "http://localhost/web/login.php?") {
+                    header("Location:http://localhost/web/?user=$user");
+                    die();
+                } elseif ($refurl == "http://localhost/web/") {
+                    header("Location:http://localhost/web/?user=$user");
+                    die();
+                } elseif (!empty($refurl)) {
+                    header("Location: $refurl&user=$user");
+                    die();
+                } else {
+                    header("Location:http://localhost/web/?user=$user");
+                    die();
+                }
             }
         } else {
             $showError = "Passwords do not match";
