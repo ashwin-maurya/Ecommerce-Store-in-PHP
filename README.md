@@ -47,7 +47,8 @@ Start XAMPP:
 Start the Apache and MySQL services using XAMPP's control panel.
 Run the application:
 
-Open your web browser and navigate to http://localhost/ecommerce-store/ (or the appropriate path where you placed the project files).
+Open your web browser and navigate to http://localhost/web/ (or the appropriate path where you placed the project files).
+
 Usage
 Register as a user or log in if you already have an account.
 Browse and search for products on the store.
